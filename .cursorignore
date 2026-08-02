@@ -1,0 +1,16 @@
+# Cursor never indexes these — secrets, build output, and vendored trees.
+# Cursor's AI indexes workspace content; anything here stays out of that index.
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build output / vendor / cache
+node_modules/
+**/node_modules/
+dist/
+.vite/
+coverage/
+ui/storybook-static/
+*.tsbuildinfo
